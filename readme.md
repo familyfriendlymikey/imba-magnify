@@ -1,0 +1,3 @@
+## magnify
+
+nice lil component

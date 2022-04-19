@@ -1,0 +1,6 @@
+{
+  "name": "imba_magnify",
+  "dependencies": {
+    "imba": "^2.0.0-alpha.207"
+  }
+}
