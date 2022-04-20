@@ -1,0 +1,23 @@
+{
+  "name": "imba-magnify",
+  "version": "1.0.0",
+  "description": "An image magnification component written in Imba.",
+  "main": "magnify.js",
+  "scripts": {
+    "build": "imbac magnify.imba"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/familyfriendlymikey/imba-magnify.git"
+  },
+  "keywords": [
+    "imba",
+    "magnify"
+  ],
+  "author": "Mikey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/familyfriendlymikey/imba-magnify/issues"
+  },
+  "homepage": "https://github.com/familyfriendlymikey/imba-magnify#readme"
+}

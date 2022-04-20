@@ -4,8 +4,8 @@ tag magnify
 		$container.style.transform !== ""
 
 	def mount
-		window.addEventListener 'resize', zoom_out.bind(this)
-		window.addEventListener 'scroll', zoom_out.bind(this)
+		global.window.addEventListener 'resize', zoom_out.bind(this)
+		global.window.addEventListener 'scroll', zoom_out.bind(this)
 
 	def zoom_out
 		$container.style.transform = ""
@@ -14,10 +14,10 @@ tag magnify
 
 	def zoom_in
 		let { x, y, width, height } = $container.getBoundingClientRect!
-		let scale_by_height = (window.innerWidth/window.innerHeight) > (width/height)
-		let ds = scale_by_height ? window.innerHeight/height : window.innerWidth/width
-		let dx = window.innerWidth/2 - width/2 - x
-		let dy = window.innerHeight/2 - height/2 - y
+		let scale_by_height = (global.window.innerWidth/global.window.innerHeight) > (width/height)
+		let ds = scale_by_height ? global.window.innerHeight/height : global.window.innerWidth/width
+		let dx = global.window.innerWidth/2 - width/2 - x
+		let dy = global.window.innerHeight/2 - height/2 - y
 		$container.style.transform = "translate({dx}px, {dy}px) scale({ds})"
 		self.style.cursor = "zoom-out"
 
