@@ -3,7 +3,7 @@ tag magnify
 	get zoomed_in?
 		$container.style.transform !== ""
 
-	def setup
+	def mount
 		window.addEventListener 'resize', zoom_out.bind(this)
 		window.addEventListener 'scroll', zoom_out.bind(this)
 
